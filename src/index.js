@@ -3,12 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBNO0Onp65X_B_VtactB0CQoKMIy-1_k3c",
+  authDomain: "mdp-e-shopping.firebaseapp.com",
+  projectId: "mdp-e-shopping",
+  storageBucket: "mdp-e-shopping.appspot.com",
+  messagingSenderId: "59880698509",
+  appId: "1:59880698509:web:f86d9f5eeb52203610e8c4",
+  measurementId: "G-8DDZ7J6ZPH"
+};
+
+initializeApp(firebaseConfig);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
+  {/*React.StrictMode*/}
     <App />
-  </React.StrictMode>
+  {/*React.StrictMode*/}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
